@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4958555ff92e929499a101d9e8df6278
+timeCreated: 1513936519
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 108270
+  packageName: Cartoon Monkeys
+  packageVersion: 1.0
+  assetPath: Assets/Mankeys_sushishop/Animation_controllers_demos_tests/Mono_corriendo2.controller
+  uploadId: 223243

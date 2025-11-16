@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 14bae4f3ff8234040b9cb62290ac5e60
+timeCreated: 1431083724
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 108270
+  packageName: Cartoon Monkeys
+  packageVersion: 1.0
+  assetPath: Assets/Mankeys_sushishop/Scripts/ShootBehaviour.cs
+  uploadId: 223243

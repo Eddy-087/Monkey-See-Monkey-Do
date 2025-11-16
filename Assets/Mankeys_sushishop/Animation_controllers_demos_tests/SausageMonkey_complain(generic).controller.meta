@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b5ebda7b56021344987bd5ca79bcbf8c
+timeCreated: 1496761368
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 108270
+  packageName: Cartoon Monkeys
+  packageVersion: 1.0
+  assetPath: Assets/Mankeys_sushishop/Animation_controllers_demos_tests/SausageMonkey_complain(generic).controller
+  uploadId: 223243

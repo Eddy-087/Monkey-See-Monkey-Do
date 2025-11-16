@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4797a78e8d865854e8f42f20cb0f8f66
+timeCreated: 1514294461
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 108270
+  packageName: Cartoon Monkeys
+  packageVersion: 1.0
+  assetPath: Assets/Mankeys_sushishop/Animation_Controller_GAME/Monkey_MainChar.controller
+  uploadId: 223243

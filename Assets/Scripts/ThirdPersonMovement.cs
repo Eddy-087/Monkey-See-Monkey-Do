@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -23,26 +24,40 @@ public class ThirdPersonMovement : MonoBehaviour
     public int currentHealth = 50;
     public HealthBar healthBar;
 
+    private int count;
+    public TextMeshProUGUI bananaCount;
+
+    public AnimatorController anim;
+
     void Start() 
     {
         healthBar.SetMaxHealth(maxHealth);
         healthBar.SetHealth(currentHealth);
+        count = 0;
+        SetBananaCount();
     }
 
     // Update is called once per frame
     void Update()
     {
+        // checks if the player is on the ground
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
+        // when the player is on the ground after having fallen
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
 
+        // represents its horizontal path
         float horizontal = Input.GetAxisRaw("Horizontal");
+        // represents its vertical path
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+        float movement = Mathf.Sqrt(horizontal * horizontal + vertical * vertical);
+        anim.SetSpeed(movement);
 
+        // complicated math that makes movement smoother, especially for movement at varying angles
         if (direction.magnitude >= 0.1f)
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
@@ -53,6 +68,8 @@ public class ThirdPersonMovement : MonoBehaviour
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
 
+        // when the player jumps and they're on the ground,
+        // take gravity into account so that the player descends back to the ground
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
@@ -73,11 +90,19 @@ public class ThirdPersonMovement : MonoBehaviour
         currentHealth = healthBar.GetHealth();
     }
 
+    void SetBananaCount()
+    {
+        bananaCount.text = "P1 Bananas: " + count.ToString();
+    }
+
+    // for collecting bananas
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
+            count += 1;
+            SetBananaCount();
         }
     }
 

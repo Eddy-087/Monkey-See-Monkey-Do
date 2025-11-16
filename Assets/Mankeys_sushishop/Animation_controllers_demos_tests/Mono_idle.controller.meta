@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ebf9c81792c0a314085277dd08aedc2c
+timeCreated: 1514290923
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 108270
+  packageName: Cartoon Monkeys
+  packageVersion: 1.0
+  assetPath: Assets/Mankeys_sushishop/Animation_controllers_demos_tests/Mono_idle.controller
+  uploadId: 223243

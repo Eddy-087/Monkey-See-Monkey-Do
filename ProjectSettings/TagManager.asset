@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - PickUp
+  - Key
+  - Door
+  - Checkpoint1
+  - Water
   layers:
   - Default
   - TransparentFX

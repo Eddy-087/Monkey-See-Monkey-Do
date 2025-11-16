@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c77829e908767354680ae8e43cb2a62a
+timeCreated: 1515413954
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 108270
+  packageName: Cartoon Monkeys
+  packageVersion: 1.0
+  assetPath: Assets/Mankeys_sushishop/Animation_controllers_demos_tests/Mono_Slapped_coco.controller
+  uploadId: 223243

@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class Player2Controller : MonoBehaviour
 {
@@ -23,10 +24,15 @@ public class Player2Controller : MonoBehaviour
     public int currentHealth = 50;
     public HealthBar healthBar;
 
+    private int count;
+    public TextMeshProUGUI bananaCount;
+
     void Start()
     {
         healthBar.SetMaxHealth(maxHealth);
         healthBar.SetHealth(currentHealth);
+        count = 0;
+        SetBananaCount();
     }
 
     // Update is called once per frame
@@ -73,11 +79,18 @@ public class Player2Controller : MonoBehaviour
         currentHealth = healthBar.GetHealth();
     }
 
+    void SetBananaCount()
+    {
+        bananaCount.text = "P2 Bananas: " + count.ToString();
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
+            count += 1;
+            SetBananaCount();
         }
     }
 

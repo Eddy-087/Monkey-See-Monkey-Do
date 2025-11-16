@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cfb90e335b6bbe4449e091fc164fdccb
+timeCreated: 1514898010
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 108270
+  packageName: Cartoon Monkeys
+  packageVersion: 1.0
+  assetPath: Assets/Mankeys_sushishop/Materials/Emmissive.mat
+  uploadId: 223243
