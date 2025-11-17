@@ -89,14 +89,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 h = Input.GetAxisRaw("Horizontal");
                 v = Input.GetAxisRaw("Vertical");
                 crouch = Input.GetKey(KeyCode.C);
-                Debug.Log($"P{player_id} h:{h:F2} v:{v:F2} crouch:{crouch} jump:{m_Jump}");
             }
             else
             {
                 h = Input.GetAxisRaw("Horizontal1");
                 v = Input.GetAxisRaw("Vertical1");
                 crouch = Input.GetKey(KeyCode.N);
-                Debug.Log($"P{player_id} h:{h:F2} v:{v:F2} crouch:{crouch} jump:{m_Jump}");
             }
 
             // calculate move direction to pass to character

@@ -289,6 +289,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_UserControl.GainTrust(10);
             }
         }
+
+        public int GetScore()
+        {
+            return count;
+        }
     }
 }
 

@@ -9,6 +9,7 @@ TagManager:
   - Door
   - Checkpoint1
   - Water
+  - Splash
   layers:
   - Default
   - TransparentFX
