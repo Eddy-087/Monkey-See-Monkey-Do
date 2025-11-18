@@ -15,7 +15,7 @@ public class Pushable : MonoBehaviour
         defaultMaxDepenVel = rb.maxDepenetrationVelocity;
 
         // Start kinematic so CC can't shove it
-        rb.isKinematic = true;
+        rb.isKinematic = false;
         // Optional: zero de-penetration speed while kinematic (belt & suspenders)
         rb.maxDepenetrationVelocity = 0f;
     }
@@ -33,9 +33,13 @@ public class Pushable : MonoBehaviour
         worldDirection.Normalize();
         rb.AddForce(worldDirection * impulse, ForceMode.Impulse);
 
+        rb.sleepThreshold = 0.005f;
+        //rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+
+
         // Re-lock after a short moment so idle contact can't nudge it
-        CancelInvoke(nameof(ReKinematic));
-        Invoke(nameof(ReKinematic), reKinematicDelay);
+        //CancelInvoke(nameof(ReKinematic));
+        //Invoke(nameof(ReKinematic), reKinematicDelay);
     }
 
     void ReKinematic()
